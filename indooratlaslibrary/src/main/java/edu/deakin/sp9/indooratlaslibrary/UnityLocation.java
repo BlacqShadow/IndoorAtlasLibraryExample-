@@ -29,8 +29,8 @@ public class UnityLocation
 
     private IALocationManager mIALocationManager;
     private Context currentContext;
-    private double x;
-    private double y;
+    public static double x;
+    public static double y;
 
     public String testLibrary()
     {

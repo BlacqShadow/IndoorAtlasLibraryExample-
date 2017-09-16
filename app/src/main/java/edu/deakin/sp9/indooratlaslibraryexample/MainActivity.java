@@ -38,11 +38,13 @@ public class MainActivity extends AppCompatActivity {
         TextView textView = (TextView) findViewById(R.id.Display);
 
         UnityLocation unityLocation = new UnityLocation();
-        textView.setText(unityLocation.testLibrary());
+
 
         ensurePermissions();
         unityLocation.setContext(this);
         unityLocation.startLocationServices();
+
+        textView.setText("Check console (Android Logcat) for location updates");
 
     }
 
